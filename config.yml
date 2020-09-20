@@ -4,13 +4,59 @@ template:
   repo: react.js-lab-template
   name: react.js-lab
 before:
-  - type: createIssue
-    title: Welcome!
-    body: new-issue.md
-steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
-    actions:
-      - type: closeIssue
+  - type: createPullRequest
+    title: 'Week 1: Fixing Bugs in JSX'
+    body: 1-0readme.md
+    head: bitcamp
+  - type: updateBranchProtection
+    enforce_admins: false
+    require_pull_request_reviews:
+      include_admins: false
+  steps:
+    - title: 'Import the Goods'
+      description: Fix a bug in some JSX code
+      event: issue_comment.created
+      link: '{{ repoUrl }}/pull/1'
+      actions:
+      - type: respond
+        with: 1-1importTheGoods.md
+    - title: 'Get Here This Instance!'
+      description: Fix a bug in some JSX code
+      event: issue_comment.created
+      link: '{{ repoUrl }}/pull/1'
+      actions:
+      - type: respond
+        with: 1-2getHereThisInstances.md
+    - title: 'Return From Whence You Came'
+      description: Fix a bug in some JSX code
+      event: issue_comment.created
+      link: '{{ repoUrl }}/pull/1'
+      actions:
+      - type: respond
+        with: 1-3returnFromWhenceYouCame.md
+    - title: 'May I Interject?'
+      description: Fix a bug in some JSX code
+      event: issue_comment.created
+      link: '{{ repoUrl }}/pull/1'
+      actions:
+      - type: respond
+        with: 1-4mayIIinterject.md
+    - title: 'Under One Condition'
+      description: Fix a bug in some JSX code
+      event: issue_comment.created
+      link: '{{ repoUrl }}/pull/1'
+      actions:
+      - type: respond
+        with: 1-5underOneCondition.md
+    - title: 'Close the Gates!'
+      description: Fix a bug in some JSX code
+      event: issue_comment.created
+      link: '{{ repoUrl }}/pull/1'
+      actions:
+      - type: respond
+        with: 1-6closeTheGates.md
+tags:
+  - React
+  - JavaScript
+  - Bit Project
+  - Web Development
