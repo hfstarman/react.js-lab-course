@@ -7,11 +7,7 @@ before:
   - type: createPullRequest
     title: 'Week 1: Fixing Bugs in JSX'
     body: 1-0readme.md
-    head: bitcamp
-  - type: updateBranchProtection
-    enforce_admins: false
-    require_pull_request_reviews:
-      include_admins: false
+    head: reactlab
 steps:
   - title: 'Import the Goods'
     description: Fix a bug in some JSX code
