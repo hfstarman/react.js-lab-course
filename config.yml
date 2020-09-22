@@ -1,13 +1,14 @@
 title: React.js Lab
 description: Learning Lab for Bitcamp React
 template:
-  repo: react.js-lab-template
   name: react.js-lab
+  repo: react.js-lab-template
 before:
   - type: createPullRequest
+    head: bitcamp
     title: 'Week 1: Fixing Bugs in JSX'
     body: 1-0readme.md
-    head: reactlab
+  - type: updateBranchProtection
 steps:
   - title: 'Import the Goods'
     description: Fix a bug in some JSX code
