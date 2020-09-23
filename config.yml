@@ -10,43 +10,43 @@ before:
     body: 1-0readme.md
   - type: updateBranchProtection
 steps:
-  - title: 'Import the Goods'
-    description: Fix a bug in some JSX code
+  - title: 'Q1 React is not defined'
+    description: Import the Goods
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
     - type: respond
       with: 1-1importTheGoods.md
-  - title: 'Get Here This Instance!'
-    description: Fix a bug in some JSX code
+  - title: 'Q2 Blank Screen'
+    description: Get Here This Instance!
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
     - type: respond
       with: 1-2getHereThisInstances.md
-  - title: 'Return From Whence You Came'
-    description: Fix a bug in some JSX code
+  - title: 'Q3 Nothing was returned from render'
+    description: Return From Whence You Came
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
     - type: respond
       with: 1-3returnFromWhenceYouCame.md
-  - title: 'May I Interject?'
-    description: Fix a bug in some JSX code
+  - title: 'Q4 JavaScript not working in JSX'
+    description: May I Interject?
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
     - type: respond
       with: 1-4mayIIinterject.md
-  - title: 'Under One Condition'
-    description: Fix a bug in some JSX code
+  - title: 'Q5 Syntax Error! Unexpected Token'
+    description: Under One Condition
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
     - type: respond
       with: 1-5underOneCondition.md
-  - title: 'Close the Gates!'
-    description: Fix a bug in some JSX code
+  - title: 'Q6 Unterminated JSX contents'
+    description: Close the Gates!
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
